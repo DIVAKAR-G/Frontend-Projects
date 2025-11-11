@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #1f172a;
+    --bg-secondary: #4e293b;
+    /* Added missing variables */
+    --text-primary: #f0f0f0;
+    --text-secondary: #c9c9c9;
+    --bg-input: #5a3c4c;
+    --border-color: #7b5b6d;
+    --accent-primary: #3b82f6; /* A common blue accent */
+    --accent-hover: #1e40af; /* A darker blue for hover */
+}
+
+body {
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.form-group { /* Standardized class name */
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-secondary);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 2px rgba(59, 130, 246, 0.5); /* Adjusted shadow opacity */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent-primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px; /* Added margin above button */
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+#result {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    padding: 10px;
+    border-top: 1px solid var(--border-color);
+}
